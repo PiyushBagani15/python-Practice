@@ -1,6 +1,6 @@
-import requests
-from bs4 import BeautifulSoup
-search="weather in ahmedabad"
+import requests                                        #imported request module
+from bs4 import BeautifulSoup                          #imported BeutifulSoup
+search="weather in ahmedabad"                          
 url=f"https://www.google.com/search?&q={search}"
 r=requests.get(url)
 s=BeautifulSoup(r.text,"html.parser")
